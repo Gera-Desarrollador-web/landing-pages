@@ -1,0 +1,195 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: #ddd;
+    top: 0;
+    left: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    justify-content: space-around;
+
+}
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#header-img {
+    width: auto;
+    height: 90px;
+}
+
+#nav-bar ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    /* Elimina el subrayado */
+    color: inherit;
+    /* Hereda el color del elemento contenedor (o puedes poner un color específico) */
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    /* Mantiene sin subrayado al pasar el mouse */
+    color: inherit;
+    /* También hereda el color al pasar el mouse (o puedes poner otro color si lo prefieres) */
+}
+
+#section-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#características {
+    display: grid;
+    grid-template-columns: 0.5fr 3.5fr;
+    align-items: center;
+    padding-left: 360px;
+    padding-right: 360px;
+    margin-top: 100px;
+}
+
+#características .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkorange;
+    
+}
+
+
+.icon {
+    display: flex; /* Flexbox para que el icono esté alineado correctamente */
+    align-items: center; /* Alinea el icono verticalmente al centro */
+}
+
+.desc {
+    display: flex;
+    flex-direction: column; /* Asegura que el título y el párrafo estén alineados verticalmente */
+    justify-content: center;
+}
+
+.icon i {
+    font-size: 2rem; /* Ajusta el tamaño de los iconos */
+}
+h1{
+    font-size: 1.7em;
+}
+h2{
+    font-size: 1.5em;
+    margin: 0;
+}
+#video{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#paquetes{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    
+}
+.lvl{
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.pd{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.btn{
+    margin-bottom: 10px;
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #d4ac0d; /* Color de fondo ligeramente más oscuro */
+    transform: scale(1.05); /* Escala el botón ligeramente al pasar el mouse */
+}
+footer{
+    background-color: #ddd; /* Color de fondo */
+    width: 100%; /* Asegura que ocupe todo el ancho de la página */
+    height: 100px; /* Altura del footer */
+    display: flex; /* Usamos Flexbox para alineación */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Centra el texto dentro del footer */
+    position: relative; /* Establece la posición relativa para control de elementos */
+    margin-bottom: 0px;
+    flex-direction: column;
+}
+#footer-links{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+@media (max-width: 650px) {
+    #características .desc {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+        
+    }
+    #características{padding-left: 0px;
+        padding-right: 0px;}
+
+        #header-img {
+            display: none; /* Esto ocultará la imagen */
+        }
+        #paquetes{
+            display: flex;
+    flex-direction: column;
+    align-items: center;     /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+        }
+}
